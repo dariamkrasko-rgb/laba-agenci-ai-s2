@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; }
+body { margin: 0; background: #f6f5f1; color: #23342e; font-family: Arial, Helvetica, sans-serif; }
+.chat { width: min(760px, calc(100% - 40px)); margin: 64px auto; }
+.eyebrow { color: #62756b; font-size: 11px; font-weight: 700; letter-spacing: .16em; }
+h1 { margin: 16px 0 10px; font-size: clamp(32px, 6vw, 44px); letter-spacing: -.04em; }
+.subtitle { margin: 0; color: #627068; font-size: 16px; }
+.conversation { min-height: 280px; height: 42vh; margin: 30px 0 24px; border: 1px solid #dce1d9; border-radius: 20px; background: #fff; }
+label { display: block; margin-bottom: 10px; font-size: 14px; font-weight: 600; }
+.composer { display: flex; gap: 10px; }
+input { flex: 1; min-width: 0; padding: 16px; border: 1px solid #cbd4cb; border-radius: 12px; background: #fff; color: #23342e; font: inherit; }
+button { padding: 0 24px; border: 0; border-radius: 12px; background: #245c43; color: white; font: inherit; font-weight: 600; cursor: pointer; }
+button span { margin-left: 12px; }
+button:hover { background: #194a34; }
+input:focus-visible, button:focus-visible { outline: 3px solid #83b49b; outline-offset: 3px; }
+.hint { color: #64736a; font-size: 12px; line-height: 1.6; }
+@media (max-width: 480px) { .chat { margin: 32px auto; } button { padding: 0 16px; } }
